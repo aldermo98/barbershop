@@ -1,0 +1,27 @@
+backend:
+  name: git-gateway
+  branch: main  # change to master if that's your repo's default branch
+
+media_folder: "img/uploads"   # where uploaded images go in the repo
+public_folder: "/img/uploads" # how the site references those images
+
+collections:
+  - name: "team"
+    label: "Team"
+    files:
+      - file: "data/barbers.json"
+        label: "Barbers"
+        name: "barbers"
+        fields:
+          - label: "Barbers"
+            name: "barbers"
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Subheading", name: "subheading", widget: "string" }
+              - { label: "Main Link (profile/booking)", name: "main_link", widget: "string", required: false }
+              - { label: "Photo", name: "photo", widget: "image" }
+              - { label: "Instagram URL", name: "instagram", widget: "string", required: false }
+              - { label: "TikTok URL", name: "tiktok", widget: "string", required: false }
+              - { label: "Facebook URL", name: "facebook", widget: "string", required: false }

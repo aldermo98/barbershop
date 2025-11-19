@@ -1,0 +1,13 @@
+{
+  "barbers": [
+    {
+      "name": "John Fadez",
+      "subheading": "Master Barber",
+      "main_link": "https://booking-link-or-profile.com",
+      "photo": "img/uploads/barber1.jpg",
+      "instagram": "https://instagram.com/example",
+      "tiktok": "",
+      "facebook": ""
+    }
+  ]
+}
